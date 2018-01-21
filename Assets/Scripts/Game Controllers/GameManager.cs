@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 
     void Awake () {
         MakeSingleton();
+        Screen.SetResolution(512, 1024, false);
     }
 
     void Start()

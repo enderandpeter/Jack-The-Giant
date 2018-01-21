@@ -28,19 +28,19 @@ public class MainMenuController : MonoBehaviour {
     }
 
     public void StartGame()
-    {
-        SceneManager.LoadScene("Gameplay");
+    {        
         GameManager.instance.gameStartedFromMainMenu = true;
+        SceneFader.instance.LoadLevel("Gameplay");
     }
 
     public void HighscoreMenu()
     {
-        SceneManager.LoadScene("HighScore");
+        SceneFader.instance.LoadLevel("HighScore");
     }
 
     public void OptionsMenu()
     {
-        SceneManager.LoadScene("OptionsMenu");
+        SceneFader.instance.LoadLevel("OptionsMenu");
     }
 
     public void QuitGame()
