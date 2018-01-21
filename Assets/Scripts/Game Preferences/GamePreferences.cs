@@ -14,6 +14,8 @@ public static class GamePreferences {
     public static string MediumDifficultyCoinScore = "MediumDifficultyCoinScore";
     public static string HardDifficultyCoinScore = "HardDifficultyCoinScore";
 
+    public static string ScreenResolution = "ScreenResolution";
+
     public static string IsMusicOn = "IsMusicOn";
 
     /*
@@ -118,5 +120,15 @@ public static class GamePreferences {
     public static void SetHardDifficultyCoinScore(int score)
     {
         PlayerPrefs.SetInt(HardDifficultyCoinScore, score);
+    }
+
+    public static string GetScreenResolution()
+    {
+        return PlayerPrefs.GetString(ScreenResolution);
+    }
+
+    public static void SetScreenResolution(string size)
+    {
+        PlayerPrefs.SetString(ScreenResolution, size);
     }
 }

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
 
     void Awake () {
         MakeSingleton();
-        Screen.SetResolution(512, 1024, false);
+        SetScreenResolution();
     }
 
     void Start()
@@ -23,6 +23,14 @@ public class GameManager : MonoBehaviour {
     void OnEnable()
     {
         SceneManager.sceneLoaded += LevelLoaded;
+    }
+
+    void SetScreenResolution(){
+        if(!PlayerPrefs.HasKey(GamePreferences.ScreenResolution)){
+            GamePreferences.SetScreenResolution("big");
+        } else {
+            OptionsController.SetScreenResolution(GamePreferences.ScreenResolution);
+        }
     }
 
     void LevelLoaded(Scene scene, LoadSceneMode mode)

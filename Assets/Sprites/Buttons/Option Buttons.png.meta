@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 47544afe0835077498f8b9a88b7abc13
-timeCreated: 1516500736
+timeCreated: 1516576684
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,7 @@ TextureImporter:
     21300006: Check Sign Button
     21300008: Back Button
     21300010: Instruction Button
+    21300012: Option Button
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -140,7 +141,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 190
+        y: 255
         width: 253
         height: 61
       alignment: 0
@@ -153,10 +154,10 @@ TextureImporter:
       name: Medium Button
       rect:
         serializedVersion: 2
-        x: 1
-        y: 124
+        x: 0
+        y: 190
         width: 253
-        height: 62
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +168,8 @@ TextureImporter:
       name: Hard Button
       rect:
         serializedVersion: 2
-        x: 2
-        y: 58
+        x: 0
+        y: 124
         width: 253
         height: 62
       alignment: 0
@@ -182,7 +183,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 58
-        y: 15
+        y: 80
         width: 32
         height: 31
       alignment: 0
@@ -195,8 +196,8 @@ TextureImporter:
       name: Back Button
       rect:
         serializedVersion: 2
-        x: 134
-        y: 0
+        x: 133
+        y: 65
         width: 54
         height: 54
       alignment: 0
@@ -210,11 +211,25 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 196
-        y: 0
+        y: 66
         width: 54
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Option Button
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 253
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
