@@ -43,6 +43,11 @@ public class MainMenuController : MonoBehaviour {
         SceneFader.instance.LoadLevel("OptionsMenu");
     }
 
+    public void Instructions()
+    {
+        SceneFader.instance.LoadLevel("Instructions");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
