@@ -15,6 +15,8 @@ public class PlayerMoveJoystick : MonoBehaviour {
     }
 	
 	void FixedUpdate () {
+        PlayerMoveKeyboard();
+
         if (moveLeft)
         {
             MoveLeft();
@@ -58,6 +60,47 @@ public class PlayerMoveJoystick : MonoBehaviour {
         }
 
         anim.SetBool("Walk", true);
+
+        myBody.AddForce(new Vector2(forceX, 0));
+    }
+
+    void PlayerMoveKeyboard()
+    {
+        float forceX = 0f;
+        float vel = Mathf.Abs(myBody.velocity.x);
+
+        float h = Input.GetAxisRaw("Horizontal");
+
+        if (h > 0) // Moving right
+        {
+            if (vel < maxVelocity)
+                forceX = speed;
+
+            if (transform.localScale.x < 0)
+            {
+                flipXScale();
+            }
+
+            anim.SetBool("Walk", true);
+        }
+
+        if (h < 0) // Moving Left
+        {
+            if (vel < maxVelocity)
+                forceX = -speed;
+
+            if (transform.localScale.x >= 0)
+            {
+                flipXScale();
+            }
+
+            anim.SetBool("Walk", true);
+        }
+
+        if (h == 0) // No movement detected, h is practically zero
+        {
+            anim.SetBool("Walk", false);
+        }
 
         myBody.AddForce(new Vector2(forceX, 0));
     }

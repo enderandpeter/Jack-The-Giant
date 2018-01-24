@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 50681022013134374}
   - component: {fileID: 61091845074047020}
   - component: {fileID: 114863222162033824}
-  - component: {fileID: 114330449436442034}
   - component: {fileID: 114233242782831814}
   - component: {fileID: 114790868420897456}
   m_Layer: 0
@@ -122,19 +121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinClip: {fileID: 8300000, guid: ab21f762620e9d6448d8285f8168b662, type: 3}
   lifeClip: {fileID: 8300000, guid: 51f42f6232c6a8c4bb0d94be4a24b5f3, type: 3}
---- !u!114 &114330449436442034
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1868847154007994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58a3785027e1a2e4b9f0fa0016e06e92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  maxVelocity: 4
 --- !u!114 &114790868420897456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,6 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e9899fd8d3c2f49bd0697b47b75619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 8
+  maxVelocity: 4
 --- !u!114 &114863222162033824
 MonoBehaviour:
   m_ObjectHideFlags: 1
